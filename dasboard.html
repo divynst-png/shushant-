@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mock Test Dashboard</title>
+
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="dasboard.css">
+
+</head>
+
+<body>
+
+  <!-- FLOATING BLOBS -->
+
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="blob blob4"></div>
+  <div class="blob blob5"></div>
+  <div class="blob blob6"></div>
+  <div class="blob blob7"></div>
+  <div class="blob blob8"></div>
+  <div class="blob blob9"></div>
+  <div class="blob blob10"></div>
+  <div class="blob blob11"></div>
+  <div class="blob blob12"></div>
+  <div class="blob blob13"></div>
+  <div class="blob blob14"></div>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div>
+
+      <!-- LOGO -->
+
+      <div class="logo-area">
+
+        <div class="logo-circle">
+          ✎
+        </div>
+
+        <div class="logo-text">
+          MockNest
+        </div>
+
+      </div>
+
+      <!-- NAVIGATION -->
+
+      <div class="nav-links">
+
+        <a href="#" class="nav-item active">
+          <span>🏠</span>
+          <p>Home</p>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>📚</span>
+          <p>Subjects</p>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>📝</span>
+          <p>Mock Tests</p>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>📊</span>
+          <p>Progress</p>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span>⚙️</span>
+          <p>Settings</p>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- PROFILE -->
+
+    <div class="profile-box">
+
+      <div class="profile-avatar">
+        D
+      </div>
+
+      <div>
+
+        <h4 id="user-greeting">
+          Welcome, <strong>Divya</strong>
+        </h4>
+
+        <p id="user-target">
+          Class 12 | Target: JEE
+        </p>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- DASHBOARD -->
+
+  <main class="dashboard">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+      <div class="welcome-area">
+
+        <h1>
+          Ready to Study Today?
+        </h1>
+
+        <p id="user-target">
+          Class 12 | Target: JEE
+        </p>
+
+      </div>
+
+      <button id="btn-logout">
+        Logout
+      </button>
+
+    </div>
+
+    <!-- SEARCH -->
+
+    <div class="search-wrapper">
+
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search subjects or mock tests..."
+      >
+
+      <button id="btn-search">
+        🔍
+      </button>
+
+    </div>
+
+    <!-- NOTEBOOK SECTION -->
+
+    <div class="section-title">
+      <h2>Your Study Notebooks</h2>
+    </div>
+
+    <!-- NOTEBOOK SCROLL -->
+
+    <div class="notebook-scroll">
+
+      <!-- NOTEBOOK 1 -->
+
+      <div class="notebook">
+
+        <div class="notebook-image">
+          <img src="p5.png" alt="Mathematics">
+        </div>
+
+        <div class="paper-label">
+
+          <div class="subject-icon">📐</div>
+
+          <h3>Mathematics</h3>
+
+        </div>
+
+        <p>
+          Algebra, Calculus, Geometry and formulas
+          neatly organised for practice.
+        </p>
+
+      </div>
+
+      <!-- NOTEBOOK 2 -->
+
+      <div class="notebook">
+
+        <div class="notebook-image">
+          <img src="p5.png" alt="Physics">
+        </div>
+
+        <div class="paper-label">
+
+          <div class="subject-icon">⚛️</div>
+
+          <h3>Physics</h3>
+
+        </div>
+
+        <p>
+          Motion, energy, electricity and conceptual
+          mock tests for preparation.
+        </p>
+
+      </div>
+
+      <!-- NOTEBOOK 3 -->
+
+      <div class="notebook">
+
+        <div class="notebook-image">
+          <img src="p5.png" alt="Chemistry">
+        </div>
+
+        <div class="paper-label">
+
+          <div class="subject-icon">🧪</div>
+
+          <h3>Chemistry</h3>
+
+        </div>
+
+        <p>
+          Organic, inorganic and reactions arranged
+          like classroom notes.
+        </p>
+
+      </div>
+
+      <!-- NOTEBOOK 4 -->
+
+      <div class="notebook">
+
+        <div class="notebook-image">
+          <img src="p5.png" alt="Biology">
+        </div>
+
+        <div class="paper-label">
+
+          <div class="subject-icon">🌿</div>
+
+          <h3>Biology</h3>
+
+        </div>
+
+        <p>
+          Diagrams, concepts and revision mock tests
+          in a calm notebook layout.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- SUBJECT GRID -->
+
+    <div id="subject-grid">
+
+      <!-- CARD 1 -->
+
+      <div class="subject-card">
+
+        <div class="card-title">
+          📐 Mathematics
+        </div>
+
+        <div class="card-meta">
+          Calculus, Algebra, Trigonometry and chapter wise mock tests.
+        </div>
+
+        <button class="start-btn">
+          Take Mock Test
+        </button>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="subject-card">
+
+        <div class="card-title">
+          ⚛️ Physics
+        </div>
+
+        <div class="card-meta">
+          Mechanics, Thermodynamics, Waves and conceptual questions.
+        </div>
+
+        <button class="start-btn">
+          Take Mock Test
+        </button>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="subject-card">
+
+        <div class="card-title">
+          🧪 Chemistry
+        </div>
+
+        <div class="card-meta">
+          Organic, Physical and Inorganic chemistry practice tests.
+        </div>
+
+        <button class="start-btn">
+          Take Mock Test
+        </button>
+
+      </div>
+
+      <!-- CARD 4 -->
+
+      <div class="subject-card">
+
+        <div class="card-title">
+          🌿 Biology
+        </div>
+
+        <div class="card-meta">
+          Botany, Zoology, diagrams and revision test series.
+        </div>
+
+        <button class="start-btn">
+          Take Mock Test
+        </button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- JS -->
+
+  <script src="dashboard.js"></script>
+
+</body>
+
+</html>

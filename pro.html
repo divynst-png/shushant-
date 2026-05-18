@@ -1,0 +1,300 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Profile</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CHALK FONT -->
+
+    <link
+        href="https://fonts.cdnfonts.com/css/chalk"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="pro.css">
+
+</head>
+
+<body>
+
+    <div class="profile-page">
+
+        <!-- FLOATING BLOBS -->
+
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+        <div class="blob blob5"></div>
+        <div class="blob blob6"></div>
+        <div class="blob blob7"></div>
+        <div class="blob blob8"></div>
+        <div class="blob blob9"></div>
+        <div class="blob blob10"></div>
+        <div class="blob blob11"></div>
+        <div class="blob blob12"></div>
+        <div class="blob blob13"></div>
+        <div class="blob blob14"></div>
+        <div class="blob blob15"></div>
+        <div class="blob blob16"></div>
+
+        <!-- EXIT BUTTON -->
+
+        <button class="exit-btn">
+            ← Back Home
+        </button>
+
+        <!-- MAIN CONTAINER -->
+
+        <div class="profile-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="profile-left">
+
+                <!-- GREEN BOARD -->
+
+                <div class="welcome-card">
+
+                    <div class="student-profile-box">
+
+                        <div class="profile-circle">
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="70"
+                                height="70"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M15.75 6.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zm4.5 13.5a8.25 8.25 0 10-16.5 0"
+                                />
+
+                            </svg>
+
+                        </div>
+
+                        <span>
+                            Student Illustration
+                        </span>
+
+                    </div>
+
+                    <!-- BOARD TEXT -->
+
+                    <div class="board-content">
+
+                        <h1>
+                            Hi Future Engineer
+                        </h1>
+
+                        <p>
+                            Every mock test sharpens your concepts
+                            and builds confidence for your dream college.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- STATS -->
+
+                <div class="stats-section">
+
+                    <div class="stat-card stat1">
+                        <h2>48</h2>
+                        <span>Mock Tests Solved</span>
+                    </div>
+
+                    <div class="stat-card stat2">
+                        <h2>86%</h2>
+                        <span>Average Score</span>
+                    </div>
+
+                    <div class="stat-card stat3">
+                        <h2>12</h2>
+                        <span>Study Hours Today</span>
+                    </div>
+
+                    <div class="stat-card stat4">
+                        <h2>5</h2>
+                        <span>Weekly Streak</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="profile-right">
+
+                <div class="profile-overlay">
+
+                    <h2>
+                        Student Profile
+                    </h2>
+
+                    <form id="profileForm">
+
+                        <div class="input-box">
+
+                            <label>
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter your full name"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                Target Exam
+                            </label>
+
+                            <select id="examSelect">
+
+                                <option value="JEE">
+                                    JEE
+                                </option>
+
+                                <option value="NEET">
+                                    NEET
+                                </option>
+
+                                <option value="CET">
+                                    CET
+                                </option>
+
+                                <option value="CUET">
+                                    CUET
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                Class
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    11th
+                                </option>
+
+                                <option>
+                                    12th
+                                </option>
+
+                                <option>
+                                    Dropper
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                Dream College
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="IIT Bombay"
+                            >
+
+                        </div>
+
+                        <!-- BUTTONS -->
+
+                        <div class="button-group">
+
+                            <button
+                                class="save-btn"
+                                type="submit"
+                            >
+                                Save Changes
+                            </button>
+
+                            <button
+                                class="update-btn"
+                                type="button"
+                            >
+                                Update Profile
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="pro.js"></script>
+
+</body>
+
+</html>

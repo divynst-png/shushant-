@@ -1,0 +1,518 @@
+@import url('https://fonts.cdnfonts.com/css/chalk');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:#f5f1e8;
+
+  padding:80px 30px 40px;
+
+  position:relative;
+
+  overflow-x:hidden;
+  overflow-y:auto;
+
+  -webkit-font-smoothing:antialiased;
+}
+
+/* =========================
+   BLOBS
+========================= */
+
+.blob{
+  position:absolute;
+  border-radius:50%;
+  z-index:0;
+}
+
+/* LIGHT BLOBS */
+
+.blob1{
+  width:420px;
+  height:420px;
+
+  background:#dbe7c8;
+
+  left:-180px;
+  bottom:30px;
+}
+
+.blob2{
+  width:300px;
+  height:300px;
+
+  background:#dbe7c8;
+
+  right:-80px;
+  top:20px;
+}
+
+.blob3{
+  width:240px;
+  height:240px;
+
+  background:#dbe7c8;
+
+  right:-90px;
+  bottom:-70px;
+}
+
+/* DARK BLOBS */
+
+.dark-blob1{
+  width:180px;
+  height:180px;
+
+  background:#bfd0a3;
+
+  left:150px;
+  top:10px;
+
+  animation:floatBlob 7s ease-in-out infinite;
+}
+
+.dark-blob2{
+  width:130px;
+  height:130px;
+
+  background:#b2c292;
+
+  right:120px;
+  top:140px;
+
+  animation:floatBlob 5s ease-in-out infinite;
+}
+
+.dark-blob3{
+  width:200px;
+  height:200px;
+
+  background:#c2d4a5;
+
+  left:-100px;
+  bottom:100px;
+
+  animation:floatBlob 8s ease-in-out infinite;
+}
+
+/* =========================
+   FLOAT BLOBS
+========================= */
+
+@keyframes floatBlob{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+/* =========================
+   BOARD
+========================= */
+
+.board-container{
+  width:min(1200px,100%);
+  height:760px;
+
+  background:#355E3B;
+
+  border:14px solid #c79a63;
+  border-radius:28px;
+
+  display:flex;
+
+  position:relative;
+  z-index:2;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 25px 40px rgba(0,0,0,0.18),
+  0 10px 15px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.left-section{
+  width:45%;
+
+  padding:60px;
+
+  position:relative;
+
+  color:white;
+
+  z-index:2;
+
+  font-family: 'Chalk', sans-serif;
+}
+
+.left-content{
+  margin-top:60px;
+}
+
+.chalk-doodle{
+  font-size:52px;
+  margin-bottom:20px;
+}
+
+.left-section h1{
+  font-size:88px;
+  line-height:1;
+
+  margin-bottom:30px;
+}
+
+.left-section p{
+  font-size:24px;
+  line-height:1.8;
+
+  max-width:430px;
+
+  color:#e4efe1;
+}
+.left-section h1{
+    font-family: 'Chalk', sans-serif;
+}
+
+.left-section p{
+    font-family: 'Chalk', sans-serif;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.right-section{
+  width:55%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  position:relative;
+}
+
+/* =========================
+   NOTEBOOK
+========================= */
+
+.notebook{
+  width:min(500px,95%);
+  height:740px;
+
+  background:url("notepad.png");
+
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  padding-top:135px;
+
+  position:relative;
+}
+
+/* =========================
+   TABS
+========================= */
+
+.tabs{
+  display:flex;
+  gap:14px;
+
+  margin-bottom:42px;
+}
+
+.tabs button{
+  border:none;
+
+  padding:14px 32px;
+
+  border-radius:50px;
+
+  background:#ddd2bc;
+
+  color:#355E3B;
+
+  font-size:17px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+}
+
+.tabs button.active{
+  background:#355E3B;
+  color:white;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form{
+  width:72%;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:20px;
+
+  max-height:420px;
+
+  overflow-y:auto;
+
+  padding-right:8px;
+}
+
+/* =========================
+   FORM SCROLLBAR
+========================= */
+
+form::-webkit-scrollbar{
+  width:6px;
+}
+
+form::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+form::-webkit-scrollbar-thumb{
+  background:#b8ad99;
+
+  border-radius:20px;
+}
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+
+  gap:8px;
+}
+
+.input-group label{
+  font-size:16px;
+  font-weight:600;
+
+  color:#355E3B;
+}
+
+/* INPUTS */
+
+.input-group input,
+.input-group select{
+  width:100%;
+  height:56px;
+
+  border:3px solid #c7baa5;
+
+  border-radius:20px;
+
+  background:#efebe4;
+
+  padding:0 20px;
+
+  font-size:16px;
+
+  outline:none;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn{
+  width:100%;
+  height:58px;
+
+  border:none;
+  border-radius:18px;
+
+  background:#355E3B;
+
+  color:white;
+
+  font-size:18px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  margin-top:4px;
+
+  flex-shrink:0;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+
+.hidden{
+  display:none !important;
+}
+
+.active{
+  background:#355E3B !important;
+  color:white !important;
+}
+
+/* =========================
+   LOTTIE
+========================= */
+
+.lottie-character{
+  position:absolute;
+
+  left:100px;
+  bottom:10px;
+
+  width:300px;
+  height:300px;
+
+  z-index:2;
+
+  animation:lottieFloat 4s ease-in-out infinite;
+}
+
+.lottie-character dotlottie-wc{
+  width:100%;
+  height:100%;
+}
+
+/* =========================
+   FLOAT LOTTIE
+========================= */
+
+@keyframes lottieFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+  .board-container{
+    height:auto;
+
+    flex-direction:column;
+  }
+
+  .left-section,
+  .right-section{
+    width:100%;
+  }
+
+  .left-section{
+    padding:50px 40px;
+  }
+
+  .left-section h1{
+    font-size:64px;
+  }
+
+  .left-section p{
+    font-size:20px;
+  }
+
+  .notebook{
+    width:450px;
+    height:700px;
+
+    margin-bottom:30px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  body{
+    padding:40px 10px;
+  }
+
+  .left-section h1{
+    font-size:48px;
+  }
+
+  .left-section p{
+    font-size:18px;
+  }
+
+  .notebook{
+    width:95%;
+    height:680px;
+  }
+
+  form{
+    width:78%;
+    max-height:390px;
+  }
+
+  .tabs button{
+    padding:12px 22px;
+    font-size:15px;
+  }
+
+  .input-group input,
+  .input-group select{
+    height:52px;
+    font-size:15px;
+  }
+
+  .submit-btn{
+    height:54px;
+    font-size:16px;
+  }
+
+  .lottie-character{
+    width:170px;
+    height:170px;
+  }
+
+}

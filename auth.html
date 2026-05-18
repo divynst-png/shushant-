@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Classroom Auth</title>
+
+  <link rel="stylesheet" href="auth.css" />
+
+  <!-- LOTTIE -->
+
+  <script
+    src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js"
+    type="module">
+  </script>
+  <link href="https://fonts.cdnfonts.com/css/chalk" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- BLOBS -->
+
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <div class="blob dark-blob1"></div>
+  <div class="blob dark-blob2"></div>
+  <div class="blob dark-blob3"></div>
+
+  <!-- BOARD -->
+
+  <div class="board-container">
+
+    <!-- LOTTIE -->
+
+    <div class="lottie-character">
+
+      <dotlottie-wc
+        src="https://lottie.host/87b3f715-77e1-4f78-bf8d-3118b6f59d20/K2YP4lvVMj.lottie"
+        autoplay
+        loop
+        speed="1"
+        renderConfig='{"devicePixelRatio":2}'>
+      </dotlottie-wc>
+
+    </div>
+
+    <!-- LEFT -->
+
+    <div class="left-section">
+
+      <div class="left-content">
+
+        <h1>
+          Welcome <br />
+          Student
+        </h1>
+
+        <p>
+          Your digital classroom for focused
+          and peaceful learning.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right-section">
+
+      <div class="notebook">
+
+        <!-- TOGGLE BUTTONS -->
+
+        <div class="tabs">
+
+          <!-- REQUIRED ID -->
+
+          <button
+            id="tab-login"
+            class="active"
+          >
+            Login
+          </button>
+
+          <!-- REQUIRED ID -->
+
+          <button id="tab-signup">
+            Sign Up
+          </button>
+
+        </div>
+
+        <!-- LOGIN FORM -->
+
+        <!-- REQUIRED ID -->
+        <!-- MUST NOT HAVE .hidden -->
+
+        <form id="login-form">
+
+          <!-- LOGIN EMAIL -->
+
+          <div class="input-group">
+
+            <label>Email</label>
+
+            <!-- REQUIRED ID -->
+
+            <input
+              type="email"
+              id="login-email"
+              placeholder="Enter your email"
+            />
+
+          </div>
+
+          <!-- LOGIN PASSWORD -->
+
+          <div class="input-group">
+
+            <label>Password</label>
+
+            <!-- REQUIRED ID -->
+
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Enter your password"
+            />
+
+          </div>
+
+          <button class="submit-btn">
+            Login
+          </button>
+
+        </form>
+
+        <!-- SIGNUP FORM -->
+
+        <!-- REQUIRED ID -->
+        <!-- MUST HAVE .hidden -->
+
+        <form
+          id="signup-form"
+          class="hidden"
+        >
+
+          <!-- NAME -->
+
+          <div class="input-group">
+
+            <label>Full Name</label>
+
+            <!-- REQUIRED ID -->
+
+            <input
+              type="text"
+              id="signup-name"
+              placeholder="Enter your full name"
+            />
+
+          </div>
+
+          <!-- EMAIL -->
+
+          <div class="input-group">
+
+            <label>Email</label>
+
+            <!-- REQUIRED ID -->
+
+            <input
+              type="email"
+              id="signup-email"
+              placeholder="Enter your email"
+            />
+
+          </div>
+
+          <!-- PASSWORD -->
+
+          <div class="input-group">
+
+            <label>Password</label>
+
+            <!-- REQUIRED ID -->
+
+            <input
+              type="password"
+              id="signup-password"
+              placeholder="Create password"
+            />
+
+          </div>
+
+          <!-- CLASS -->
+
+          <div class="input-group">
+
+            <label>Class</label>
+
+            <!-- REQUIRED ID -->
+
+            <select id="student-class">
+
+              <!-- REQUIRED OPTIONS -->
+
+              <option value="11th">
+                11th
+              </option>
+
+              <option value="12th">
+                12th
+              </option>
+
+              <option value="Dropper">
+                Dropper
+              </option>
+
+            </select>
+
+          </div>
+
+          <!-- TARGET EXAM -->
+
+          <div class="input-group">
+
+            <label>Target Exam</label>
+
+            <!-- REQUIRED ID -->
+
+            <select id="target-exam">
+
+              <!-- REQUIRED OPTIONS -->
+
+              <option value="JEE">
+                JEE
+              </option>
+
+              <option value="NEET">
+                NEET
+              </option>
+
+            </select>
+
+          </div>
+
+          <button class="submit-btn">
+            Create Account
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+
+  <script src="auth.js"></script>
+
+</body>
+
+</html>
